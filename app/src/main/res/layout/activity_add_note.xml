@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/noteNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNoteName"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteNameEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/note_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/noteContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNoteContent"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:lines="5"/>
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteContentEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/save_note"/>
+
+</RelativeLayout>
